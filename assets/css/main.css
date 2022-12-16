@@ -1,0 +1,848 @@
+@font-face {
+  font-family: "Chivo Bold";
+  src: url('../fonts/Chivo-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Chivo Light";
+  src: url('../fonts/Chivo-Light.ttf');
+}
+
+@font-face {
+  font-family: "Chivo Regular";
+  src: url('../fonts/Chivo-Regular.ttf');
+}
+
+body {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #161616;
+  margin: 0px;
+  font-family: "Chivo Regular";
+  overflow-x: hidden;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+.header {
+  margin-top: 65px;
+}
+.container {
+  width: 1280px;
+  margin:auto;
+}
+.container1 {
+  width: 940px;
+  margin: auto;
+}
+.container.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.sp {
+  display: none !important;
+}
+ul {
+  list-style-type: none;
+}
+.logo-footer-area {
+  display: flex;
+}
+.lists {
+  flex-direction: row;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.menu-item:last-child {
+  margin-right:0px;
+}
+
+.menu-item {
+  margin-left: 0;
+  margin-right: 30px;
+  transition-duration: .3s;
+  white-space: nowrap;
+}
+.footer-logo {
+  width:75px;height:75px;
+}
+
+.menu-item a{
+  color: #B5B5B5;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.icon-item {
+  margin-left: 0;
+  margin-right: 23px;
+  transition-duration: .3s;
+}
+
+.icon-item a {
+  color: #fff;
+}
+
+.icon-item a svg:hover {
+  color: #1968FF;
+}
+
+#main-visual {
+  background-image: url('../img/faq-back.png');
+  margin-top:75px;
+}
+
+.logo-title {
+  display: flex;
+}
+.logo {
+  width: 137px;
+  height: 137px;
+}
+
+.title {
+  font-family: "Chivo Regular";
+  font-size: 85px;
+  color: #9BBAFF;
+  margin: 0px;
+  margin-left:15px;
+  display: flex;
+  align-items: center;
+}
+
+.subtitle h5 {
+  color: #f9f9f9;
+  font-size: 22px;
+  margin:0px;
+  padding-left:112px;
+  padding-top: 22px;
+}
+
+.desc-title {
+  font-family: "Chivo Bold";
+  font-size: 70px;
+  margin: 0px;
+}
+.sp-small {
+  display: none !important;
+}
+.desc-detail ul {
+  list-style-type: disc;
+  margin: 0px;
+  margin-top:35px;
+}
+.desc-detail ul li {
+  font-family: "Chivo Light";
+  color: #fff;
+  font-size: 25px;
+}
+
+.desc-detail ul li:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.strong {
+  color: #9BBAFF;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.dashboard-button {
+  padding: 20px 90px 20px 90px !important;
+  border-radius: 10px;
+  text-decoration: none;
+  transition-duration: .5s;
+  background-color: #004FFE;
+  border: 1px solid #004FFE;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.dashboard-button:hover {
+  background-color: #161616;
+  border: 1px solid #9BBAFF;
+}
+
+.roadmap-button {
+  padding: 20px 90px 20px 90px !important;
+  border-radius: 10px;
+  text-decoration: none;
+  transition-duration: .5s;
+  background-color: #161616;
+  border: 1px solid #9BBAFF;
+  color: #fff;
+}
+.roadmap-button:hover {
+  background-color: #004FFE;
+  border: 1px solid #004FFE;
+}
+
+.fixed-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #004FFE;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-width: 1px;
+  border-color: #004FFE;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  position: fixed;
+  z-index: 999;
+  transition: .3s;
+  right: 2%;
+  bottom: 5%;
+}
+
+.fixed-button:hover {
+  background-color: #0c42b6;
+  border: #004FFE;
+}
+
+.types {
+  margin-top:200px;
+  margin-bottom:150px;
+  font-size: 20px;
+}
+
+.type-list {
+  display: flex;
+  justify-content: space-between;
+}
+.type-title {
+  display: flex;
+  align-items: center;
+}
+.type img {
+  margin-right: 20px;
+  width: 33px;
+  height: 33px;
+}
+.price-text {
+  color : #9BBAFF;
+  padding-left: 53px;
+  padding-top:10px;
+}
+h3 {
+  font-size: 48px;
+  font-family: "Chivo Bold";
+  margin:0px;
+}
+.block {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  text-align: justify;
+  flex-direction: row;
+}
+.left-block {
+  width: 52%;
+}
+
+.right-block {
+  width: 47%;
+  display: flex;
+  justify-content: flex-end;
+}
+.right-block img {
+  width: 350px;
+}
+#what-is-papa {
+  padding-bottom: 150px;
+  background-image: url('../img/what-is-papa.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.left-block p {
+  font-size: 24px;
+  margin:0px;
+  margin-top:50px;
+  margin-bottom: 30px;
+}
+
+.horizontal-line {
+  width: 100%;
+  max-width: 65px;
+  height: 1px;
+  background-color: #fff;
+  margin-right: 20px;
+}
+
+.horizontal-line:empty {
+  min-width: 1px;
+  min-height: 1px;
+}
+
+.papa-title {
+  display: flex;
+  align-items: center;
+}
+
+.coin-div {
+  /* background-image: url('../img/coin-shadow.png'); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: 0% 100%; */
+}
+.coin-img {
+  animation: coin-animation 3.5s infinite ease-in-out;
+}
+
+/* The animation code */
+@keyframes coin-animation {
+  0% {
+    -webkit-transform: translateY(0) skewY(1deg);
+    transform: translateY(0) skewY(1deg);
+	}
+  50% {
+    -webkit-transform: translateY(-20px) skewY(-1deg);
+    transform: translateY(-20px) skewY(-1deg);
+    }
+	100% {
+    -webkit-transform: translateY(0) skewY(1deg);
+    transform: translateY(0) skewY(1deg);
+    }
+}
+
+#how-to-work {
+  padding-top: 90px;
+  background-image: url('../img/papa-work.png');
+  background-size: cover;
+}
+
+.papa-work {
+  padding-bottom: 85px;
+}
+.card-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+.card-item {
+  width: 27%;
+  position: relative;
+  padding:50px 25px;
+  border-radius: 10px;
+  background: rgba(0, 194, 255, 0.15);
+  border: 2px solid #9bbaff;
+  mix-blend-mode: color-dodge;  
+}
+.card-item:nth-child(2) {
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+.card-item .img {
+  position: absolute;
+  top:20px;right: 20px;
+}
+
+.card-subject {
+  font-size: 22px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.card-subject-number {
+  font-family: "Chivo Bold";
+  position: absolute;
+  left:1px;
+}
+.card-subject-detil {
+  font-family: "Chivo Regular";
+}
+.card-title {
+  font-family: "Chivo Bold";
+  font-size: 28px;
+  text-align: center;
+  margin-top:35px;
+}
+.card-desc p{
+  font-family: "Chivo Light";
+  font-size: 20px;
+  padding: 0px 20px;
+}
+
+#partners {
+  padding-top:90px;
+  background-image: url('../img/partners.png');
+  background-position: center;
+}
+
+#featured-on {
+  padding-top:90px;
+  background-image: url('../img/faq-back.png');
+  background-size: cover;
+}
+.partner-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 90px;
+}
+.partner-item {
+  width: 90px;
+  height: 90px;
+  opacity: .7;
+  transition-duration: .4s;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.partner-item:hover {
+  transform: scale(1.3);
+}
+.partner-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.partner-item img:nth-child(2) {
+  opacity: 0;
+  position:absolute;
+}
+
+.partner-item:hover img:first-child {
+  opacity: 0;
+}
+.partner-item:hover img:nth-child(2) {
+  opacity: 1;
+}
+.partner-item:hover .sub-title {
+  transform:scale(1,1);
+}
+.sub-title {
+  transform: scale(0,0);
+  transition-duration: .3s;
+  color: #fff;
+  line-height: 1;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.footer {
+  
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top:50px;
+}
+.footer-medium {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top:30px;
+}
+.footer-title {
+  display: flex;
+  align-items: center;
+}
+.footer-title-name {
+  font-family: "Chivo Regular";
+  font-size: 45px;
+  color: #9BBAFF;
+  margin: 0px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.footer-button {
+  display: flex;
+}
+
+.footer .menu-lists .lists {
+  border-bottom:none;
+}
+
+.footer .menu-item {
+  margin-right: 15px;
+}
+footer {
+  background-color: #0c0c0c;
+}
+.footer-bottom {
+  font-size: 14px;
+  text-align: center;
+  padding-top:30px;
+  padding-bottom:25px
+}
+
+.earthquake {
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+}
+
+.earthquake iframe {
+  width: 430px;
+  height: 430px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width:1500px) {
+  .container {
+    width: 1080px;
+  }
+  .container1 {
+    width: 800px;
+  }
+  .menu-item {
+    margin-right:10px;
+  }
+  .icon-item {
+    margin-right: 20px;
+  }
+  .logo {
+    width: 110px;height: 110px;
+  }
+  .title {
+    font-size: 70px;
+  }
+  .desc-title {
+    font-size: 65px;
+  }
+  .earthquake iframe {
+    width: 390px;height: 390px;
+  }
+  .fixed-button {
+    width: 120px;height: 120px;
+  }
+  .dashboard-button,.roadmap-button {
+    padding: 20px 70px 20px 70px !important;
+  }
+  .horizontal-line {
+    max-width: 54px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .container {
+    width: 780px;
+  }
+  .container1 {
+    width: 660px;
+  }
+  .earthquake iframe {
+    width: 250px;height: 250px;
+  }
+  .left-block {
+    width: 80%;
+  }
+  .container.menu {
+    flex-direction: column;
+  }
+  .lists {
+    justify-content: center;
+  }
+
+  .icon-lists {
+    margin-top :10px;
+  }
+  .block {
+    flex-direction: column;
+  }
+  .coin-div {
+    display: none;
+  }
+  .card-items {
+    flex-direction: column;
+  }
+  .card-item {
+    width: 80%;
+    margin: auto;
+  }
+
+  .card-item:nth-child(2) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: flex !important;
+  }
+  .logo {
+    max-width: 90px;max-height: 90px;
+  }
+  .title {
+    font-size: 68px;
+  }
+  .logo-title { 
+    justify-content: center;
+    margin-bottom: 17px;
+  }
+  .desc-title {
+    line-height: 1.2;
+    font-size: 64px;
+  }
+  .description.sp {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .lists {
+    flex-wrap: wrap;
+    line-height: 1.5;
+  }
+  .type-list {
+    justify-items: left;
+    align-items: stretch;
+    grid-template-columns: repeat(2,minmax(0px,1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    display: grid;
+    margin-top: 165px;
+    padding-left: 65px;
+  }
+  .logo-footer-area {
+    display: flex;
+  }
+}
+
+@media screen and (max-width:900px) {
+
+  .container {
+    width: calc(100% - 100px)
+  }
+  .container1 {
+    width: calc(100% - 160px);
+  }
+  .partner-items {
+    justify-items: center;
+    align-items: stretch;
+    grid-template-columns: repeat(3,minmax(0px,1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    display: grid;
+  }
+  .left-block {
+    width: calc(100% - 30px)
+  }
+  .logo-area {
+    display: flex;
+  }
+  .logo-footer-area {
+    display: flex;
+  }
+  .sp-small {
+    display: block !important;
+  }
+  .pc-small {
+    display: none !important;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+ 
+  .pc-fixed {
+    display: none !important;
+  }
+  .logo-title {
+    flex-direction: row-reverse;
+  }
+  .logo {
+    width:90px;height: 90px;
+  }
+  .fixed-button {
+    width: 100px;
+    height: 100px;
+    font-size: 13px;
+    position: static;
+  }
+
+  #main-visual {
+    margin-top: 45px;
+  }
+
+  .right-block {
+    justify-content: center;
+  }
+ .sp-logo-title {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .subtitle h5 {
+    padding-left: unset;
+  }
+  .footer-title {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .footer-medium {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:680px) {
+
+  .container {
+    width: calc(100% - 30px)
+  }
+  .container1 {
+    width: calc(100% - 60px);
+  }
+  .logo {
+    width: 45px;height: 45px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .header {
+    margin-top: 45px;
+  }
+  .menu-item {
+    font-size: 13px;
+    margin-right: 5px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid;
+  }
+  .icon-lists .lists {
+    flex-wrap: wrap;
+  }
+  .fixed-button {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    font-size: 8px;
+    position: static;
+    order: 3;
+  }
+  .earthquake iframe {
+    width: 180px;height: 180px;
+  }
+  .menu-item a {
+    padding-left:0px;
+    padding-right: 0px;
+  }
+  .footer-logo {
+    width:45px;height: 45px;
+  }
+  .footer-title-name {
+    font-size: 25px;
+  }
+  .dashboard-button,.roadmap-button {
+    padding: 8px 15px !important;
+  }
+  .subtitle h5 {
+    font-size: 15px;
+  }
+  .desc-title {
+    font-size: 25px;
+  }
+  body {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .desc-detail ul li {
+    font-size: 15px;
+  }
+  .types {
+    font-size: 14px;
+    margin-top:150px;
+    margin-bottom: 75px;
+  }
+  .price-text {
+    padding-left: unset;
+  }
+  .type {
+    display: flex;
+    justify-content: space-between;
+  }
+  .type-list {
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: repeat(1,minmax(1px,1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding-left: 0;
+    display: grid;
+    margin-top: 91px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  .left-block p {
+    font-size: 14px;
+  }
+  .image {
+    max-width: 200px;
+  }
+  #what-is-papa {
+    padding-bottom: 75px;
+  }
+  #how-to-work {
+    padding-top: 50px;
+  }
+  .horizontal-line {
+    max-width: 35px;
+    margin-right: 10px;
+  }
+  .footer .menu-item {
+    margin-right: 5px;
+  }
+  .partner-items {
+    padding-bottom: 45px;
+  }
+  #featured-on ,#partners{
+    padding-top: 45px;
+  }
+  .card-items {
+    padding-bottom: 60px;
+  }
+  .card-title {
+    font-size: 25px;
+  }
+  .card-desc p {
+    font-size: 14px;
+  }
+  .card-subject {
+    font-size: 17px;
+  }
+  .footer-bottom {
+    font-size: 11px;
+  }
+}
